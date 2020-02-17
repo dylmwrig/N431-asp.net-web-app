@@ -1,0 +1,5 @@
+/Users/user/Projects/NewSol/NewSol/bin/NewSol.dll
+/Users/user/Projects/NewSol/NewSol/bin/NewSol.pdb
+/Users/user/Projects/NewSol/NewSol/obj/Debug/NewSol.csprojAssemblyReference.cache
+/Users/user/Projects/NewSol/NewSol/obj/Debug/NewSol.dll
+/Users/user/Projects/NewSol/NewSol/obj/Debug/NewSol.pdb

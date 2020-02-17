@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A620254F-8850-497D-9905-EAF9D14BB338}</ProjectGuid>
+    <ProjectTypeGuids>{349C5851-65DF-11DA-9384-00065B846F21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>NewSol</RootNamespace>
+    <AssemblyName>NewSol</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.Services" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+    <Content Include="Default.aspx" />
+    <Content Include="scss\_about.scss" />
+    <Content Include="scss\_buttons.scss" />
+    <Content Include="scss\_contact.scss" />
+    <Content Include="scss\_masthead.scss" />
+    <Content Include="scss\_mixins.scss" />
+    <Content Include="scss\_navbar.scss" />
+    <Content Include="scss\_projects.scss" />
+    <Content Include="scss\_signup.scss" />
+    <Content Include="scss\_variables.scss" />
+    <Content Include="scss\grayscale.scss" />
+    <Content Include="css\grayscale.css" />
+    <Content Include="css\grayscale.min.css" />
+    <Content Include="css\mobile.css" />
+    <Content Include="css\style.css" />
+    <Content Include="vendor\jquery\jquery.js" />
+    <Content Include="vendor\jquery\jquery.min.js" />
+    <Content Include="vendor\jquery\jquery.slim.js" />
+    <Content Include="vendor\jquery\jquery.slim.min.js" />
+    <Content Include="vendor\jquery-easing\jquery.easing.compatibility.js" />
+    <Content Include="vendor\jquery-easing\jquery.easing.js" />
+    <Content Include="vendor\jquery-easing\jquery.easing.min.js" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="vendor\fontawesome-free\css\all.css" />
+    <Content Include="vendor\fontawesome-free\css\all.min.css" />
+    <Content Include="vendor\fontawesome-free\css\brands.css" />
+    <Content Include="vendor\fontawesome-free\css\brands.min.css" />
+    <Content Include="vendor\fontawesome-free\css\fontawesome.css" />
+    <Content Include="vendor\fontawesome-free\css\fontawesome.min.css" />
+    <Content Include="vendor\fontawesome-free\css\regular.css" />
+    <Content Include="vendor\fontawesome-free\css\regular.min.css" />
+    <Content Include="vendor\fontawesome-free\css\solid.css" />
+    <Content Include="vendor\fontawesome-free\css\solid.min.css" />
+    <Content Include="vendor\fontawesome-free\css\svg-with-js.css" />
+    <Content Include="vendor\fontawesome-free\css\svg-with-js.min.css" />
+    <Content Include="vendor\fontawesome-free\css\v4-shims.css" />
+    <Content Include="vendor\fontawesome-free\css\v4-shims.min.css" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-brands-400.eot" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-brands-400.svg" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-brands-400.ttf" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-brands-400.woff" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-regular-400.eot" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-regular-400.svg" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-regular-400.ttf" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-regular-400.woff" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-solid-900.eot" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-solid-900.svg" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-solid-900.ttf" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-solid-900.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="vendor\jquery\jquery.min.map" />
+    <None Include="vendor\jquery\jquery.slim.min.map" />
+    <None Include="vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <None Include="vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <None Include="vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <None Include="vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <None Include="vendor\bootstrap\css\bootstrap.css.map" />
+    <None Include="vendor\bootstrap\css\bootstrap.min.css.map" />
+    <None Include="vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <None Include="vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <None Include="vendor\bootstrap\js\bootstrap.js.map" />
+    <None Include="vendor\bootstrap\js\bootstrap.min.js.map" />
+    <None Include="vendor\fontawesome-free\webfonts\fa-brands-400.woff2" />
+    <None Include="vendor\fontawesome-free\webfonts\fa-regular-400.woff2" />
+    <None Include="vendor\fontawesome-free\webfonts\fa-solid-900.woff2" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <XspParameters Port="8080" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="True" />
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+</Project>
