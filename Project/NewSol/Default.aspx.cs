@@ -14,6 +14,11 @@ namespace NewSol
             form2.Visible = false;
         }
 
+        protected void AdminPageNav(object sender, EventArgs e)
+        {
+            Response.Redirect("AdminPage.aspx");
+        }
+
         protected void BtnSubmit_Click(object sender, EventArgs e)
         {
             if (Page.IsValid)

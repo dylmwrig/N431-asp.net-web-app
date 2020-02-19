@@ -39,9 +39,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="/index.html">Home Page</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="Default.aspx">Home Page</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="AdminPage.aspx">Admin Page</a>
+                        </li>
+            
                 </ul>
             </div>
         </div>
@@ -227,14 +231,12 @@
         <asp:RadioButtonList ID="radioCost" runat="server" Font-Size="10" Font-Strikeout="False" ForeColor="Black" TextAlign="Left">
                 
             <asp:ListItem value="Free to all participants"></asp:ListItem>
-            <asp:ListItem value="Free + participation stipend for ALL participants"></asp:ListItem>
-            <asp:ListItem value="Free + participation stipend to SOME participants"></asp:ListItem>
-            <asp:ListItem value="There is a participation cost for all students"></asp:ListItem>
             <asp:ListItem value="Cost determined by demonstrated financial need"></asp:ListItem>
+            <asp:ListItem value="Less than $50"></asp:ListItem>
+            <asp:ListItem value="$300-$1000"></asp:ListItem>
+            <asp:ListItem value="More than $1000"></asp:ListItem>
             
         </asp:RadioButtonList><br /><br />
-            
-            
             
         <p>Explain if cost can be free or reduced to a specific amount and explain the eligibility for</p> 
         <p>cost reduction and if any documentation is necessary.</p>
@@ -242,7 +244,14 @@
         <asp:TextBox ID="exp" runat="server" BackColor="White" onfocus="this.select()"></asp:TextBox>
             <br>
             <br>
-            
+            <br>
+        
+        <asp:Label ID="lblstipend" runat="server" Text="Program Stipend" ForeColor="Black" Font-Size="14pt"></asp:Label><br />
+        <asp:RadioButtonList ID="RadioButtonList1" runat="server" Font-Size="10" Font-Strikeout="False" ForeColor="Black" TextAlign="Left">
+            <asp:ListItem value="No participants receive a stipend"></asp:ListItem>
+            <asp:ListItem value="Some participants receive a stipend"></asp:ListItem>
+            <asp:ListItem value="All participants receive a stipend"></asp:ListItem>    
+        </asp:RadioButtonList><br /><br />
         
         <asp:Label ID="lblduration" runat="server" Text="What is the duration of the program?" ForeColor="Black" Font-Size="14pt"></asp:Label><br />
             
