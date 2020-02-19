@@ -1,0 +1,12 @@
+/Users/user/Projects/NewSol/NewSol/bin/NewSol.dll
+/Users/user/Projects/NewSol/NewSol/bin/NewSol.pdb
+/Users/user/Projects/NewSol/NewSol/obj/Debug/NewSol.csprojAssemblyReference.cache
+/Users/user/Projects/NewSol/NewSol/obj/Debug/NewSol.dll
+/Users/user/Projects/NewSol/NewSol/obj/Debug/NewSol.pdb
+D:\School\asp.net class\N431\Project\NewSol\bin\NewSol.dll.config
+D:\School\asp.net class\N431\Project\NewSol\bin\NewSol.dll
+D:\School\asp.net class\N431\Project\NewSol\bin\NewSol.pdb
+D:\School\asp.net class\N431\Project\NewSol\obj\Debug\NewSol.csprojAssemblyReference.cache
+D:\School\asp.net class\N431\Project\NewSol\obj\Debug\NewSol.csproj.CoreCompileInputs.cache
+D:\School\asp.net class\N431\Project\NewSol\obj\Debug\NewSol.dll
+D:\School\asp.net class\N431\Project\NewSol\obj\Debug\NewSol.pdb
