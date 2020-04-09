@@ -1,0 +1,13 @@
+in-csci-aspnet.ads.iu.edu\SQL2017
+
+or
+in-csci-aspnet.ads.iu.edu\SQL2017,11433
+
+Your University ID number is 2000429130
+pass: d9130pro
+
+remote:
+asp-net-cs.iupui.edu
+
+
+ADD: gender, DOB

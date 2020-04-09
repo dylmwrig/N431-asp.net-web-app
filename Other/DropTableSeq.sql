@@ -1,0 +1,16 @@
+DROP TABLE Program;
+DROP TABLE ContactPerson;
+DROP TABLE FieldOfStudy;
+DROP TABLE Grades;
+DROP TABLE ProgLoc;
+DROP TABLE ProgramCost;
+DROP TABLE Residental;
+DROP TABLE Season;
+DROP TABLE Duration;
+DROP TABLE ServiceArea;
+DROP TABLE Stipend;
+DROP TABLE Admin;
+DROP TABLE ProgramManager;
+DROP TABLE ManagerRole;
+DROP TABLE Guest;
+DROP TABLE State;

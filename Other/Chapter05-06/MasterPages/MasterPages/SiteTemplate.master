@@ -1,0 +1,22 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SiteTemplate.master.cs" Inherits="SiteTemplate" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>SiteTemplate</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <img src="apress.jpg" alt="Logo" />
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+
+        <br />
+        <asp:contentplaceholder id="ContentPlaceHolder2" runat="server">
+        </asp:contentplaceholder>
+      </div>
+    </form>
+</body>
+</html>

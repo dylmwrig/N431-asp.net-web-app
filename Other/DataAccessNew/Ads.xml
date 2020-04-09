@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+	<Ad>
+		<ImageUrl>images/specialoffer_background2.jpg</ImageUrl>
+		<NavigateUrl>http://www.iupui.edu</NavigateUrl>
+		<AlternateText>Link to IUPUI</AlternateText>
+		<Impression>10</Impression>
+		<Keyword>home</Keyword>
+	</Ad>
+	<Ad>
+		<ImageUrl>images/trumpet2.jpg</ImageUrl>
+		<NavigateUrl>http://www.iupui.edu</NavigateUrl>
+		<AlternateText>Link to IUPUI</AlternateText>
+		<Impression>10</Impression>
+		<Keyword>home</Keyword>
+	</Ad>
+	
+</Advertisements>
