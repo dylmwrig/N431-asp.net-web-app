@@ -43,6 +43,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=19.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Documents\ASP.NET AJAX Control Toolkit\Bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -79,6 +83,7 @@
     <Content Include="css\style.css" />
     <Content Include="Default.aspx" />
     <Content Include="EditAdmin.aspx" />
+    <Content Include="Footer.ascx" />
     <Content Include="ForgetPwd.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Login.aspx" />
@@ -86,6 +91,8 @@
     <Content Include="Navigation.ascx" />
     <Content Include="NewProgram.aspx" />
     <Content Include="Register.aspx" />
+    <Content Include="RegisterPM.aspx" />
+    <Content Include="RegisterGuest.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -123,6 +130,13 @@
     </Compile>
     <Compile Include="EditAdmin.aspx.designer.cs">
       <DependentUpon>EditAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
     </Compile>
     <Compile Include="ForgetPwd.aspx.cs">
       <DependentUpon>ForgetPwd.aspx</DependentUpon>
@@ -169,6 +183,20 @@
     </Compile>
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterPM.aspx.cs">
+      <DependentUpon>RegisterPM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegisterPM.aspx.designer.cs">
+      <DependentUpon>RegisterPM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterGuest.aspx.cs">
+      <DependentUpon>RegisterGuest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegisterGuest.aspx.designer.cs">
+      <DependentUpon>RegisterGuest.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

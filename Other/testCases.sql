@@ -16,9 +16,6 @@ select * from ProgramCost;
 select * from ServiceArea;
 
 
-delete from ProgramManager;
-delete from Guest;
-delete from Admin;
 
 --UPDATE UserType SET lastLogin =  '', currLoggedIn = 'yes' WHERE email =  'dprosevski@gmail.com';
 SELECT roleID FROM ManagerRole WHERE roleName = 'Outreach Program Director';
