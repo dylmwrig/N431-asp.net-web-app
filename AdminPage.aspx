@@ -40,10 +40,10 @@
 
         <!-- New Admin -->
         <asp:HyperLink CssClass="nav-link js-scroll-trigger" ID="addNewAdminID" runat="server" NavigateUrl="~/addNewAdmin.aspx" Visible ="false">Add New Admin</asp:HyperLink>
-                
+        
         <!-- Find and Edit Admin -->
-        <asp:Label runat="server" ID="lblFindAdminID" Text="Find admin by email search:" ForeColor="Black" Font-Size="14pt" Visible ="false"><br /></asp:Label>
-        <asp:TextBox ID="findAdminID" runat="server" BackColor="White" onfocus="this.select()" Visible ="false"></asp:TextBox>
+        <asp:Label ID="lblFindAdminID" runat="server" Text="Choose an admin to edit:" ForeColor="Black" Font-Size="10pt"></asp:Label><br />
+        <asp:DropDownList ID="adminList" OnSelectedIndexChanged="Index_Change" AppendDataBoundItems="False" AutoPostBack="true" runat="server"></asp:DropDownList>
         <asp:Button ID="editAdminID" runat="server" Text="Edit" UseSubmitBehavior="false" OnClick="editAdminID_Click" Visible ="false"/><br /><br />
 
 
