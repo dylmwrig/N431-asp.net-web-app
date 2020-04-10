@@ -32,11 +32,6 @@ namespace Capstone2nd
             string middleNameCurr = "";
             string lastNameCurr = "";
             string sufixCurr = "";
-            string passwordCurr = "";
-            string altEmailCurr = "";
-            string altPasswordCurr = "";
-            string phoneCurr = "";
-            string addressCurr = "";
 
             //connect to the database as soon as the page loads so that security questions can be loaded
             string cs = WebConfigurationManager.ConnectionStrings["localConnection"].ConnectionString;
@@ -57,11 +52,6 @@ namespace Capstone2nd
                     middleNameCurr = new ListItem(reader["middleName"].ToString()).ToString();
                     lastNameCurr = new ListItem(reader["lastName"].ToString()).ToString();
                     sufixCurr = new ListItem(reader["sufix"].ToString()).ToString();
-                    passwordCurr = new ListItem(reader["password"].ToString()).ToString();
-                    altEmailCurr = new ListItem(reader["altEmail"].ToString()).ToString();
-                    altPasswordCurr = new ListItem(reader["altPassword"].ToString()).ToString();
-                    phoneCurr = new ListItem(reader["phone"].ToString()).ToString();
-                    addressCurr = new ListItem(reader["address"].ToString()).ToString();
                 }
                 reader.Close();
                 con.Close();

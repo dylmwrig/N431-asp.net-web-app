@@ -22,7 +22,7 @@ namespace Capstone2nd
             {
                 addNewAdminID.Visible = true;
                 lblFindAdminID.Visible = true;
-                findAdminID.Visible = true;
+                adminList.Visible = true;
                 editAdminID.Visible = true;
             }
 
@@ -37,7 +37,7 @@ namespace Capstone2nd
 
         protected void editAdminID_Click(object sender, EventArgs e)
         {
-            Session["adminToEdit"] = findAdminID.Text;
+            Session["adminToEdit"] = adminList.SelectedItem.Text;
             Response.Redirect("EditAdmin.aspx");
         }
 
@@ -192,14 +192,31 @@ namespace Capstone2nd
                     areaList.SelectedIndex = selectedIndex;
                     reader.Close();
 
-                    con.Close();
+                    //populate admin dropdown
+                    selectedIndex = adminList.SelectedIndex;
+
+                    adminList.Items.Clear();
+                    cmd = new SqlCommand("SELECT email FROM Admin", con);
+                    reader = cmd.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        ListItem NewItem = new ListItem(reader["email"].ToString());
+                        adminList.Items.Add(NewItem);
+                    }
+                    adminList.SelectedIndex = selectedIndex;
+                    reader.Close();
                 }
 
                 catch (Exception err)
                 {
-                    Response.Write("<script>alert(\"" + err.Message + "\");</script>");
-                    Response.Write(err.Message);
-                    //lblMessage.Text = "Cannot submit information now. Please try again later.";
+                    lblMessage.Text = null;
+                    lblMessage.Text = "Cannot submit information now. Please try again later.";
+                }
+                finally
+                {
+                    con.Close();
+                    Session["message"] = "Changes successfully applied!";
                 }
 
                 Index_Change(null, null);
@@ -235,14 +252,17 @@ namespace Capstone2nd
                     }
                 }
                 reader.Close();
-
-                con.Close();
             }
 
             catch (Exception err)
             {
-                Response.Write("<script>alert(\"" + err.Message + "\");</script>");
-                Response.Write(err.Message);
+                lblMessage.Text = null;
+                lblMessage.Text = "Cannot submit information now. Please try again later.";
+            }
+            finally
+            {
+                con.Close();
+                Session["message"] = "Changes successfully applied!";
             }
         }
 
@@ -389,11 +409,14 @@ namespace Capstone2nd
 
             catch (Exception err)
             {
-                Response.Write("<script>alert(\"" + err.Message + "\");</script>");
-                Response.Write(err.Message);
+                lblMessage.Text = null;
+                lblMessage.Text = "Cannot submit information now. Please try again later.";
             }
-
-            con.Close();
+            finally
+            {
+                con.Close();
+                Session["message"] = "Changes successfully applied!";
+            }
             populateData(true);
         }
 
