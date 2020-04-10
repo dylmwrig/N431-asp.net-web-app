@@ -231,13 +231,13 @@ namespace Capstone2nd
         protected global::System.Web.UI.WebControls.Label lblPassword;
 
         /// <summary>
-        /// password control.
+        /// pass control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox password;
+        protected global::System.Web.UI.WebControls.TextBox pass;
 
         /// <summary>
         /// reqPassword control.
@@ -258,22 +258,22 @@ namespace Capstone2nd
         protected global::System.Web.UI.WebControls.RegularExpressionValidator regexPassword;
 
         /// <summary>
-        /// lblConfirmPassword control.
+        /// lblconfirmPass control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblConfirmPassword;
+        protected global::System.Web.UI.WebControls.Label lblconfirmPass;
 
         /// <summary>
-        /// confirmPassword control.
+        /// confirmPass control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox confirmPassword;
+        protected global::System.Web.UI.WebControls.TextBox confirmPass;
 
         /// <summary>
         /// reqConfPassword control.
@@ -294,114 +294,6 @@ namespace Capstone2nd
         protected global::System.Web.UI.WebControls.CompareValidator compPass;
 
         /// <summary>
-        /// lblAltEmail control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAltEmail;
-
-        /// <summary>
-        /// altEmail control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox altEmail;
-
-        /// <summary>
-        /// regexAltEmail control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator regexAltEmail;
-
-        /// <summary>
-        /// lblAltPass control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAltPass;
-
-        /// <summary>
-        /// altPass control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox altPass;
-
-        /// <summary>
-        /// regexAltPass control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator regexAltPass;
-
-        /// <summary>
-        /// lblPhone control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPhone;
-
-        /// <summary>
-        /// phone control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox phone;
-
-        /// <summary>
-        /// lblAddress control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAddress;
-
-        /// <summary>
-        /// address control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox address;
-
-        /// <summary>
-        /// lblGender control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblGender;
-
-        /// <summary>
-        /// radioGender control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList radioGender;
-
-        /// <summary>
         /// ValidationSummary control.
         /// </summary>
         /// <remarks>
@@ -409,15 +301,6 @@ namespace Capstone2nd
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary;
-
-        /// <summary>
-        /// lblBtnSubmit control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblBtnSubmit;
 
         /// <summary>
         /// btnSubmit control.
@@ -454,5 +337,14 @@ namespace Capstone2nd
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Confirm;
+
+        /// <summary>
+        /// footer control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Capstone2nd.Footer footer;
     }
 }
