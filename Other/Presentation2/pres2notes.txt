@@ -1,34 +1,7 @@
-register user no need for:
-address
-gender
-department
-check box for agreeing
-
-
-register PM no need for:
-address
-gender
-department
-check box for agreeing
-
-
-
-for registering admin no need for:
-alt email
-alt pass
-phone number
-address
-gender
-
 
 admin page:
 change to drop down to edit admin
 
-
-edit admin page remove:
-phone number
-address
-gender
 
 
 fixes

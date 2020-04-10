@@ -79,12 +79,6 @@ namespace Capstone2nd
                 middle.Text = middleNameCurr;
                 last.Text = lastNameCurr;
                 sufix.Text = sufixCurr;
-                password.Text = passwordCurr;
-                confirmPassword.Text = passwordCurr;
-                altEmail.Text = altEmailCurr;
-                altPass.Text = altPasswordCurr;
-                phone.Text = phoneCurr;
-                address.Text = addressCurr;
             }
         }
 
@@ -92,27 +86,31 @@ namespace Capstone2nd
         {
             string emailCurr = Session["adminToEdit"].ToString();
             string confirmEmailCurr = Session["adminToEdit"].ToString();
+            //save pass
+            Session["passRegForm"] = pass.Text;
+
             if (Page.IsValid)
             {
                 form1.Visible = false;
                 output.Text = "First name: " + first.Text +
                     "<br />Last name: " + last.Text +
                     "<br />Email: " + emailCurr +
-                    "<br />Confirm email: " + confirmEmailCurr +
-                    "<br />Password length: " + password.Text.Length +
-                    "<br />Confirm password length: " + confirmPassword.Text.Length;
+                    "<br />Confirm email: " + confirmEmailCurr;
                 form2.Visible = true;
             }
+        }
 
+        protected void Confirm_Click(object sender, EventArgs e)
+        {
             //variables
             string prefixForm = prefix.Text;
+            string firstForm = first.Text;
             string middleForm = middle.Text;
+            string lastForm = last.Text;
             string sufixForm = sufix.Text;
-            string altEmailForm = altEmail.Text;
-            string altPassForm = altPass.Text;
-            string phoneForm = phone.Text.Replace("+", "").Replace(" ", "").Replace("(", "").Replace(")", "").Replace("-", "");
-            string addressForm = address.Text;
-            string currentTime = DateTime.Now.ToString(); //for register date
+            string emailForm = Session["adminToEdit"].ToString();
+            string passwordForm = Session["passRegForm"].ToString();
+
             //SQL
             string sql; //statemenet to to manipulate
             string cs = WebConfigurationManager.ConnectionStrings["localConnection"].ConnectionString;
@@ -125,12 +123,17 @@ namespace Capstone2nd
                 form2.Visible = true;
 
                 con.Open();
-                sql = "UPDATE Admin SET prefix = '" + prefixForm + "', firstName = '" + first.Text + "', middleName = '" + middleForm + "', lastName = '" + last.Text +
-                    "', sufix = '" + sufixForm + "', password = '" + password.Text + "', altEmail = '" + altEmailForm + "', altPassword = '" + altPassForm +
-                    "', phone = '" + phoneForm + "'," + "address = '" + addressForm + "' WHERE email = '" + emailCurr + "';";
+                sql = "UPDATE Admin SET prefix = @prefix, firstName = @firstName, middleName = @middleName, lastName = @lastName, sufix = @sufix" +
+                    ", password = @password WHERE email = @email;";
                 SqlCommand cmd = new SqlCommand(sql, con);
+                cmd.Parameters.Add(new SqlParameter("@prefix", prefixForm));
+                cmd.Parameters.Add(new SqlParameter("@firstName", firstForm));
+                cmd.Parameters.Add(new SqlParameter("@middleName", middleForm));
+                cmd.Parameters.Add(new SqlParameter("@lastName", lastForm));
+                cmd.Parameters.Add(new SqlParameter("@sufix", sufixForm));
+                cmd.Parameters.Add(new SqlParameter("@password", passwordForm));
+                cmd.Parameters.Add(new SqlParameter("@email", emailForm));
                 cmd.ExecuteNonQuery();
-
                 con.Close();
             }
             catch (Exception err)
@@ -138,16 +141,12 @@ namespace Capstone2nd
                 lblMessage.Text = null;
                 lblMessage.Text = "Cannot submit information now. Please try again later.";
             }
-            finally //must make sure the connection is properly closed
-            { //the finally block will always run whether there is an error or not
+            finally
+            {
                 con.Close();
+                Session["message"] = "Changes successfully applied!";
+                Response.Redirect("AdminPage.aspx?AdminCreated", true);
             }
-        }
-
-        protected void Confirm_Click(object sender, EventArgs e)
-        {
-            Session["message"] = "Changes successfully applied!";
-            Response.Redirect("AdminPage.aspx?AdminCreated", true);
         }
     }
 }
